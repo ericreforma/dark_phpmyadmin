@@ -1,0 +1,289 @@
+@-moz-document url-prefix("http://localhost/phpmyadmin/") {
+body, #pma_navigation_content{
+    background-color: #161617;
+}
+
+#pma_navigation_tree a{
+        color: #717171
+}
+
+.activePointer{
+	background-color: #191919 !important;
+}
+
+select {
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    border: 1px solid #353535;
+    color: #969696;
+    padding: 3px;
+    background: #444444;
+    margin: 6px;
+}
+
+.responsivetable th{
+    background: #272727;
+    color: #afafaf;
+}
+
+.responsivetable th a, a, a:link, a:visited, a:active, button.mult_submit, .checkall_box+label{
+    color: #fff;
+    text-shadow: none;
+	}
+table caption, table th, table td,#topmenu a{
+ text-shadow: none;
+}
+thead th {
+    border-right: 1px solid #4e4e4e;
+}
+
+table tbody:first-of-type tr:nth-child(odd), table tbody:first-of-type tr:nth-child(odd) th, #table_index tbody:nth-of-type(odd) tr, #table_index tbody:nth-of-type(odd) th {
+    background: #212121;
+    color: #949494;
+}
+
+table tbody:first-of-type tr:nth-child(even), table tbody:first-of-type tr:nth-child(even) th, #table_index tbody:nth-of-type(even) tr, #table_index tbody:nth-of-type(even) th{
+       background: #292929;
+    color: #949494;
+}
+
+table tbody:first-of-type tr:not(.nopointer):hover, table tbody:first-of-type tr:not(.nopointer):hover th, .hover:not(.nopointer) {
+  	background-image: none;
+    color: #dadada;
+    background: #6b6b6b;
+}
+
+.menucontainer{
+    background: #272727;
+    background-image: none;
+}
+ul#topmenu > li{
+	border: 0 !important;
+}
+
+.responsivetable th a, a, a:link, a:visited, a:active, button.mult_submit, .checkall_box+label{
+	    color: #a9a9a9;
+}
+
+.tabactive {
+    background: #696969 !important;
+    color: #fff !important;
+}
+
+div.success, div.notice, div.error{
+	    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 0;
+    color: #dcdcdc;
+}
+
+.result_query div.sqlOuter {
+    background: #171717;
+    text-align: left;
+}
+
+.cm-s-default .cm-keyword {
+    color: #ed71ff;
+}
+
+.cm-s-default{
+    color: #d4d4d4;
+}
+
+.cm-s-default .cm-variable-2 {
+    color: #90c8ff;
+}
+
+div.tools, .tblFooters {
+    font-weight: normal;
+    color: #000;
+    background: #212121;
+}
+
+fieldset legend {
+    font-weight: bold;
+    color: #b6cbff;
+    padding: 5px 10px;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border: none;
+    background-color: #3340bd;
+    -moz-box-shadow: 3px 3px 15px #bbb;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    max-width: 100%;
+}
+
+fieldset, .preview_sql {
+    margin-top: 1em;
+    border-radius: 4px 4px 0 0;
+    -moz-border-radius: 4px 4px 0 0;
+    -webkit-border-radius: 4px 4px 0 0;
+    border: #404040 solid 1px;
+    padding: 0.5em;
+    background: #212121;
+    text-shadow: 1px 1px 2px #fff inset;
+    -moz-box-shadow: 1px 1px 2px #fff inset;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+#pma_navigation_tree li.selected {
+    color: #000;
+    background-color: #0e0e0e;
+}
+.CodeMirror {
+    position: relative;
+    overflow: hidden;
+    background: #0c0c0c;
+}
+
+.CodeMirror-gutters {
+    border-right: 1px solid #333;
+    background-color: #000000;
+    white-space: nowrap;
+}
+
+div#tablefieldscontainer select {
+    width: 100%;
+    background: #1b1b1b;
+}
+
+.success {
+    color: #000;
+    background-color: #4c5a00;
+}
+
+#pma_navigation_tree_content::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+#pma_navigation_tree_content::-webkit-scrollbar-track {
+  background: #0c0c0c;
+}
+
+/* Handle */
+#pma_navigation_tree_content::-webkit-scrollbar-thumb {
+  background: #232323;
+}
+
+/* Handle on hover */
+#pma_navigation_tree_content::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+#pma_navigation_resizer{
+background-color: #171717;
+}
+
+.notice {
+    color: #000;
+    background-color: #444444;
+}
+#serverinfo {
+    background: #252525;
+    padding: .3em .9em;
+    padding-left: 2.2em;
+    text-shadow: none;
+    max-width: 100%;
+    max-height: 16px;
+    overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #0c0c0c;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #232323;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+#pma_console .content {
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin-bottom: -65px;
+    border-top: solid 1px #aaa;
+    background: #000;
+    padding-top: .4em;
+}
+
+#pma_console .message {
+    border-bottom: solid 1px #131313;
+    padding-bottom: .2em;
+}
+
+#pma_console .toolbar {
+    position: relative;
+    background: #4a0404;
+    border-top: none;
+    cursor: n-resize;
+}
+
+#pma_console .mid_text, #pma_console .toolbar span {
+    vertical-align: middle;
+    color: #afafaf;
+}
+
+.cm-s-pma .CodeMirror-code pre, .cm-s-pma .CodeMirror-code {
+    font-family: Monaco, Consolas, monospace;
+    color: #fff;
+}
+
+input[type=submit]:hover, input[type=button]:hover, button[type=submit]:not(.mult_submit):hover, input[type=reset]:hover, input[name=submit_reset]:hover, input.button:hover{
+    background: #078406;
+    background-image: none;
+    text-shadow: none;
+    color: #fff;
+}
+input[type=submit], input[type=button], button[type=submit]:not(.mult_submit), input[type=reset], input[name=submit_reset], input.button{
+        background: #0a5d1d;
+    background-image: none;
+    text-shadow: none;
+    padding: 5px 16px;
+    border: none;
+    color: #ffffff82;
+}
+
+input[type=text], input[type=password], input[type=number], input[type=date] {
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    background: #131313;
+    border: 1px solid #333;
+    color: #555;
+    padding: 4px;
+    color: #fff;
+}
+
+input[type=text]:hover, input[type=text]:focus, input[type=password]:hover, input[type=password]:focus, input[type=number]:hover, input[type=number]:focus, input[type=date]:hover, input[type=date]:focus, select:focus {
+    border: 1px solid #7c7c7c;
+    background: #000;
+    box-shadow: none !important;
+}
+
+fieldset fieldset {
+    margin: .8em;
+    background: #fff;
+    border: 1px solid #aaa;
+    background: #212121;
+}
+
+ul.resizable-menu li:hover{
+    background: #212121;
+    background-image: none;
+}
+}
