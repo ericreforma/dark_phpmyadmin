@@ -1,4 +1,7 @@
-@-moz-document url-prefix("http://localhost/phpmyadmin/") {
+@-moz-document url-prefix("http://localhost/phpmyadmin/"), url-prefix("http://cms-cebu.taptabmedia.com/phpmyadmin") {
+body{
+    color: #949494;
+}
 body, #pma_navigation_content{
     background-color: #161617;
 }
@@ -22,9 +25,11 @@ select {
     margin: 6px;
 }
 
-.responsivetable th{
-    background: #272727;
+.sticky_columns th, .table_results th, .responsivetable th{
+        background: #212c58;
     color: #afafaf;
+    text-align: center;
+    border-right: none;
 }
 
 .responsivetable th a, a, a:link, a:visited, a:active, button.mult_submit, .checkall_box+label{
@@ -51,7 +56,7 @@ table tbody:first-of-type tr:nth-child(even), table tbody:first-of-type tr:nth-c
 table tbody:first-of-type tr:not(.nopointer):hover, table tbody:first-of-type tr:not(.nopointer):hover th, .hover:not(.nopointer) {
   	background-image: none;
     color: #dadada;
-    background: #6b6b6b;
+    background: #424242;
 }
 
 .menucontainer{
@@ -67,7 +72,7 @@ ul#topmenu > li{
 }
 
 .tabactive {
-    background: #696969 !important;
+    background: #8a1d1d !important;
     color: #fff !important;
 }
 
@@ -79,7 +84,7 @@ div.success, div.notice, div.error{
 }
 
 .result_query div.sqlOuter {
-    background: #171717;
+    background: #080808;
     text-align: left;
 }
 
@@ -322,5 +327,41 @@ ul.resizable-menu li:hover{
 #canvas {
     background-color: #000;
     color: #000;
+}
+ul#topmenu a.tab:hover, ul#topmenu .tabactive {
+    background-color: #a52a2a;
+    color: #fff;
+}
+
+td.marked:not(.nomarker), table tr.marked:not(.nomarker) td, table tr.marked:not(.nomarker) th, table tr.marked:not(.nomarker) {
+    background-image: url(./themes/svg_gradient.php?from=ced6df&to=b6c6d7);
+    background-size: 100% 100%;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ced6df), to(#b6c6d7));
+    background: -webkit-linear-gradient(top, #ced6df, #b6c6d7);
+    background: -moz-linear-gradient(top, #ced6df, #b6c6d7);
+    background: -ms-linear-gradient(top, #ced6df, #b6c6d7);
+    background: -o-linear-gradient(top, #ced6df, #b6c6d7);
+    color: #d4d4d4;
+    background: #404a6f;
+    background-image: none;
+}
+.ic_b_plus {
+    background-image: url(./themes/pmahomme/img/right_custom.png);
+    background-size: 9px;
+    background-repeat: no-repeat;
+    background-position: center 6px;
+}
+
+.ic_b_minus {
+    background-image: url(./themes/pmahomme/img/down_custom.png);
+    background-repeat: no-repeat;
+    background-size: 9px;
+    background-position: center 5px;
+}
+
+#pma_navigation_tree .list_container,
+#pma_navigation_tree div.block b,
+#pma_navigation_tree div.block i {
+	border: 0
 }
 }
